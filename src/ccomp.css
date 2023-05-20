@@ -1,0 +1,21 @@
+.classtext{
+    font-size: 40px;
+    padding: 20px 0 15px 0;
+}
+.clsP{
+    color: blue;
+    font-size: x-large;
+    line-height: 40px;
+}
+.flexclass
+{
+    background-color: rgb(149, 223, 255);
+    height: 50vh;
+    border: 3px solid black;
+    border-radius: 30px;
+    width: 45%;
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    cursor: pointer;
+}

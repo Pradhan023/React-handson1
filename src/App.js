@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Fcomp from './functionalcomp';
+import Ccomp from './classcomp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+class App extends React.Component{
+constructor(){
+  super();
+  this.state={
+    funrender:false,
+    classrender:false
+  }
+}
+
+  render(){
+    return(
+    <div className = "App">
+      <h1 className='h1'> Styling using Functional and Class Component</h1>
+      <div className='btn'>
+      <button onClick={()=>this.setState({funrender: !this.state.funrender})}>To see styling in functional Component</button>
+      <button onClick={()=>this.setState({classrender: !this.state.classrender})}>To see styling in class Component</button>
+      </div>
+    
+      {this.state.funrender ?<Fcomp/>:null}
+      {this.state.classrender ?<Ccomp/>:null}
     </div>
-  );
+    )
+  }
 }
 
 export default App;

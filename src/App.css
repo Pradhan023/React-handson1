@@ -1,10 +1,29 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h1{
+  font-size: 45px;
+  padding-top: 20px;
+  text-shadow: 6px 6px rgb(15, 156, 217);
+  cursor: pointer;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 10%;
+}
+button{
+  border-radius: 35px;
+  height: 70px;
+  width: 22%;
+  font-size: large;
+  background-color: rgb(183, 233, 255);
+  cursor: pointer;
+}
+button:hover
+{
+  background-color: rgb(149, 223, 255);
 }
 
 @media (prefers-reduced-motion: no-preference) {
